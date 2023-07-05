@@ -1,0 +1,118 @@
+object Form1: TForm1
+  Left = 350
+  Height = 203
+  Top = 31
+  Width = 512
+  Caption = 'Form1'
+  ClientHeight = 203
+  ClientWidth = 512
+  OnCreate = FormCreate
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 24
+    Width = 42
+    Caption = 'Função:'
+    ParentColor = False
+  end
+  object cbFuncao: TComboBox
+    Left = 64
+    Height = 23
+    Top = 24
+    Width = 432
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'Administrativo'
+      'Vendedor'
+      'Funcionario'
+    )
+    TabOrder = 0
+    Text = 'Administrativo'
+  end
+  object LabelNome: TLabel
+    Left = 16
+    Height = 15
+    Top = 64
+    Width = 36
+    Caption = 'Nome:'
+    ParentColor = False
+  end
+  object edtNome: TEdit
+    Left = 64
+    Height = 23
+    Top = 56
+    Width = 96
+    TabOrder = 1
+  end
+  object LabelSalario: TLabel
+    Left = 176
+    Height = 15
+    Top = 64
+    Width = 38
+    Caption = 'Salário:'
+    ParentColor = False
+  end
+  object edtSalario: TEdit
+    Left = 232
+    Height = 23
+    Top = 56
+    Width = 96
+    TabOrder = 2
+  end
+  object LabelBonus: TLabel
+    Left = 344
+    Height = 15
+    Top = 64
+    Width = 36
+    Caption = 'Bônus:'
+    ParentColor = False
+  end
+  object edtBonus: TEdit
+    Left = 400
+    Height = 23
+    Top = 56
+    Width = 96
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Cadastrar'
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 424
+    Height = 25
+    Top = 96
+    Width = 32
+    Caption = '<<'
+    TabOrder = 5
+  end
+  object Button3: TButton
+    Left = 464
+    Height = 25
+    Top = 96
+    Width = 32
+    Caption = '>>'
+    TabOrder = 6
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 66
+    Top = 128
+    Width = 478
+    TabOrder = 7
+  end
+  object Button4: TButton
+    Left = 104
+    Height = 25
+    Top = 96
+    Width = 96
+    Caption = 'Calcular Salario'
+    TabOrder = 8
+  end
+end
